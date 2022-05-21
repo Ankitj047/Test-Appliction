@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import FirstComp from './Day_1_Props/Propswithinfunctinalcomp/Firstcomp'
+import Secondcomp from './Day_1_Props/Propswithinfunctinalcomp/Secondcomp';
+import Firsctclasspropcom from './Day_1_Props/propswithclasscomp/Firstclasspropcom';
+import Secondclasspropcomp from './Day_1_Props/propswithclasscomp/Secondclasspropcomp';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* < FirstComp  name = "ankit" />
+      <Secondcomp subject = "reactjs" />   */}
+      <Firsctclasspropcom  name="ankit" />
+      <Secondclasspropcomp/>
+     
     </div>
   );
 }

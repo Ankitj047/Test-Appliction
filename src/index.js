@@ -3,14 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import One from './One';
-import Two from './Two'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>  
-  {/* <One></One>; */}
-  {/* <Two></Two> */}
+  <> 
+  <App /> 
   </>
 );
 
