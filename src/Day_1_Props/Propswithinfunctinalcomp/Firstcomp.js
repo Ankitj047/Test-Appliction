@@ -4,10 +4,11 @@ import Secondcomp from './Secondcomp'
 
 
 function one(props) {
+  const {name} = props
   return (
     <>
-    <div>my name is {props.name}</div>
-    <Secondcomp class = "BTECH" stream= "Mechanical"/>
+    <div>my name is {name}</div>
+      <Secondcomp Altclass = "BTECH" stream= "Mechanical"/>
     </>
   )
 }

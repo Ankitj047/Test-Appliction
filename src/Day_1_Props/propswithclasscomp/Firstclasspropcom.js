@@ -5,8 +5,9 @@ export default class Firsctclasspropcom extends Component {
   
 
   render() {
+    const {name} = this.props
     return (
-      <div>my name is {this.props.name}</div>
+      <div>my name is {name}</div>
     )
   }
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-function Secondcomp(props) {
+const Secondcomp = ({subject, Altclass, stream}) => {
   return (
       <>
-    <div>I am learning {props.subject}</div>
-    <div>I have done {props.class} in {props.stream}</div>
+    <div>I am learning {subject}</div>
+    <div>I have done {Altclass} in {stream}</div>
     </>
   )
 }
