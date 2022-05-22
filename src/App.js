@@ -22,9 +22,9 @@ function App() {
       {/* <StateEx />
       <StateExFunctional />
       <CondinalRendering /> */}
-      {/* <Classstate />
-      <FuncState/> */}
-<PracticeConditionrendering/>
+      {/* <Classstate /> */}
+      <FuncState/>
+{/* <PracticeConditionrendering/> */}
     </div>
   );
 }
