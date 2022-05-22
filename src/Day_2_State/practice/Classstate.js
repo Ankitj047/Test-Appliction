@@ -23,13 +23,12 @@ decrement () {
 }
     render() {
 
-
-
     return (
       <>
       <div>{this.state.count}</div>
       <button onClick={()=>this.apple ()} >Increment</button>
       <button onClick={()=> this.decrement()} >decrement</button>
+      
       </>
     )
   }

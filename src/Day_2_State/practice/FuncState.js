@@ -3,7 +3,6 @@ import { useState } from "react";
 
 export default function FuncState() {
   const [count, setCount] = useState(0);
-
   function changecount() {
     setCount(count + 1);
   }
@@ -11,11 +10,18 @@ export default function FuncState() {
   function reducecount() {
       setCount (count-1)
   }
+
+function reset()
+{
+
+  setCount (0)
+}
   return (
     <>
       <div>{count}</div>
       <button onClick={() => changecount()}>Increment</button>
       <button onClick={()=>reducecount()}>decrement</button>
+      <button onClick={()=>reset()} >reset</button>
     </>
   );
 }
