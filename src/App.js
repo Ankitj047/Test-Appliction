@@ -7,6 +7,9 @@ import Secondclasspropcomp from './Day_1_Props/propswithclasscomp/Secondclasspro
 import StateEx from './Day_2_State/StateEx';
 import StateExFunctional from './Day_2_State/StateExFunctional';
 import CondinalRendering from './Day_2_State/CondinalRendering';
+import Classstate from './Day_2_State/practice/Classstate';
+import FuncState from './Day_2_State/practice/FuncState';
+import PracticeConditionrendering from './Day_2_State/PracticeConditionrendering';
 
 
 function App() {
@@ -14,12 +17,14 @@ function App() {
     <div className="App">
       {/* <FirstComp  name = "ankit" /> */}
       {/* <Secondcomp subject="reactjs" Altclass="COMP" stream="IT" />   */}
-      <Firsctclasspropcom  name="ankit" />
+      {/* <Firsctclasspropcom  name="ankit" /> */}
       {/* <Secondclasspropcomp/> */}
-      <StateEx />
+      {/* <StateEx />
       <StateExFunctional />
-      <CondinalRendering />
-     
+      <CondinalRendering /> */}
+      {/* <Classstate />
+      <FuncState/> */}
+<PracticeConditionrendering/>
     </div>
   );
 }
