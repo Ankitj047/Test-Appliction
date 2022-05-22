@@ -14,8 +14,8 @@ export default function FuncState() {
   return (
     <>
       <div>{count}</div>
-      <button onClick={() => changecount()}>click me</button>
-      <button onClick={()=>reducecount()}>reducecount</button>
+      <button onClick={() => changecount()}>Increment</button>
+      <button onClick={()=>reducecount()}>decrement</button>
     </>
   );
 }
