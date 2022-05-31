@@ -8,17 +8,7 @@ const ListExample = () => {
             "id": 1,
             "name": "Mustafa",
             "username": "Bret",
-            "email": "Sincere@april.biz",
-            "address": {
-                "street": "Dayna Park",
-                "suite": "Suite 449",
-                "city": "Bartholomebury",
-                "zipcode": "76495-3109",
-                "geo": {
-                    "lat": "24.6463",
-                    "lng": "-168.8889"
-                }
-            }
+            "email": "Sincere@april.biz"
         },
         {
             "id": 2,
