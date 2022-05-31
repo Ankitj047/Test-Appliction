@@ -39,14 +39,12 @@ const ListExample = () => {
             "email": "Julianne.OConner@kory.org",
         }
     ]
-    let StudentList = studentList.map((user) => <StudentDetails user={user} />)
-
+    // let StudentList = studentList.map((user) => <StudentDetails user={user} />)
+    let StudentLists =  studentList.map((name1)=> <h1>{name1.username}</h1>)
   return (
-      <div>
-          ListExample
-          {
-              StudentList
-          }
+      <div>     
+ListExample 
+{StudentLists}
     </div>
   )
 }
