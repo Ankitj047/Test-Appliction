@@ -6,7 +6,19 @@ export class ParentComponent extends Component {
         super(props)
 
         this.sayHello = this.helloMessage.bind(this)
+
+        this.state=({
+            count:0
+        })
+        
     }
+
+    apple(count) {
+        this.setState ({
+          // message: "hello come here"
+          count: this.state.count+1
+        })
+      }
 
     helloMessage(name) {
         alert('Hello Message from ' + name)
@@ -16,6 +28,8 @@ export class ParentComponent extends Component {
     return (
         <div>
             <ChildComponent clickHandler={this.sayHello} />
+            <div>{this.state.count}</div>
+            <button onClick={()=>this.apple ()} >Increment</button>
       </div>
     )
   }
