@@ -32,9 +32,9 @@ function App() {
       {/* <BindingExample /> */}
       {/* <PracticeConditionrendering/> */}
       {/* <ListExample /> */}
-      <ParentComponent/>
+      {/* <ParentComponent/> */}
       {/* <DataFetch/> */}
-    {/* <Lifecycle/> */}
+    <Lifecycle/>
     </div>
   );
 }
