@@ -31,8 +31,8 @@ function App() {
       {/* <BindingExample /> */}
       {/* <PracticeConditionrendering/> */}
       {/* <ListExample /> */}
-      {/* <ParentComponent/> */}
-      <DataFetch/>
+      <ParentComponent/>
+      {/* <DataFetch/> */}
     </div>
   );
 }
