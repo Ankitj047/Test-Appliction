@@ -28,7 +28,7 @@ function App() {
       <FuncState/> */}
       {/* <BindingExample /> */}
       {/* <PracticeConditionrendering/> */}
-      <ListExample />
+      {/* <ListExample /> */}
     </div>
   );
 }
