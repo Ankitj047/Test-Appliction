@@ -13,6 +13,7 @@ import PracticeConditionrendering from './Day_2_State/PracticeConditionrendering
 import BindingExample from './Day_3/BindingExample';
 import ListExample from './Day_3/ListExample';
 import ParentComponent from './Day_4_MethodAsProp/ParentComponent';
+import DataFetch from './Common/DataFetch';
 
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
       {/* <BindingExample /> */}
       {/* <PracticeConditionrendering/> */}
       {/* <ListExample /> */}
-      <ParentComponent/>
+      {/* <ParentComponent/> */}
+      <DataFetch/>
     </div>
   );
 }
