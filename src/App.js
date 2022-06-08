@@ -15,6 +15,7 @@ import ListExample from './Day_3/ListExample';
 import ParentComponent from './Day_4_MethodAsProp/ParentComponent';
 import DataFetch from './Common/DataFetch';
 import Lifecycle from './Day_5_LifecycleMethods/Lifecycle';
+import Fetchapi from './Common/Fetchapi';
 
 
 function App() {
@@ -34,7 +35,8 @@ function App() {
       {/* <ListExample /> */}
       {/* <ParentComponent/> */}
       {/* <DataFetch/> */}
-    <Lifecycle/>
+    {/* <Lifecycle/> */}
+    <Fetchapi/>
     </div>
   );
 }
