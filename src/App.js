@@ -15,6 +15,7 @@ import ListExample from './Day_3/ListExample';
 import ParentComponent from './Day_4_MethodAsProp/ParentComponent';
 import DataFetch from './Common/DataFetch';
 import Lifecycle from './Day_5_LifecycleMethods/Lifecycle';
+import HooksLifeCycle from './Day_6_Lifecycle_Hooks/HooksLifeCycle';
 
 
 function App() {
@@ -34,7 +35,8 @@ function App() {
       {/* <ListExample /> */}
       {/* <ParentComponent/> */}
       {/* <DataFetch/> */}
-    <Lifecycle/>
+      {/* <Lifecycle/> */}
+      <HooksLifeCycle />
     </div>
   );
 }
