@@ -21,7 +21,7 @@ const getPostDetails = ()=>{
   return (
     <div>FetchData
                 {
-          posts.map(post => <li>{post.title}</li>)
+          posts.map(post => <li key={post.id}>{post.title}</li>)
         }
     </div>
   )
