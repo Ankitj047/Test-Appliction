@@ -17,7 +17,7 @@ const DataFetch = () => {
   useEffect(() => {
     axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
       .then(response => {
-        console.log("RESPONSE ==>", response);
+        // console.log("RESPONSE ==>", response);
         // setPosts(response.data)
         setPost(response.data)
       })
@@ -28,11 +28,11 @@ const DataFetch = () => {
 
   return (
     <div>
-      {/* <ul>
+      <ul>
         {
           posts.map(post => <li>{post.title}</li>)
         }
-      </ul> */}
+      </ul>
       <input type="text" value={id} onChange={e => setId(e.target.value)} /><br></br>
       {post && post.title}
     </div>
