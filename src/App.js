@@ -41,8 +41,8 @@ function App() {
       {/* <Lifecycle/> */}
       {/* <HooksLifeCycle /> */}
       {/* <Fetch/> */}
-      {/* <FetchwithID/> */}
-<FetchDatainTable/>
+      <FetchwithID/>
+{/* <FetchDatainTable/> */}
     </div>
   );
 }

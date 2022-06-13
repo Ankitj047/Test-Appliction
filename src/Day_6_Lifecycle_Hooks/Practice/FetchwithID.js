@@ -26,7 +26,7 @@ export default function FetchwithID() {
       .then(res => {
         console.log(res);
         if (res.status === 200) {
-          setSelectedPost(res?.data)
+          setSelectedPost(res.data)
         }
       })
       .catch(err => {
