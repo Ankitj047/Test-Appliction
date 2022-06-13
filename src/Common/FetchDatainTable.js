@@ -15,29 +15,6 @@ export default function FetchDatainTable() {
         }).catch((error) => ("error", error))
     }
 
-<<<<<<< HEAD
-  return (
-      <>
-    <div>FetchDatainTable</div>
-    <table>
-<tr>
-    <td>name</td>
-    <td>username</td>
-</tr>
-    
-{
-    data.map((users)=>
-   (
-<tr> 
-   <td>{users.name}</td>
-<td>{users.username}</td> 
-</tr>
-)   )
-}
-</table>
-    </>
-  )
-=======
     return (
         <>
             <div>FetchDatainTable</div>
@@ -60,5 +37,4 @@ export default function FetchDatainTable() {
             </table>
         </>
     )
->>>>>>> 35443caf7a96604008fa2c0fca91ccdf72593cb7
 }
