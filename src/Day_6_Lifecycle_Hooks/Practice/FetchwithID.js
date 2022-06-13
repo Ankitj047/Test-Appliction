@@ -24,11 +24,8 @@ export default function FetchwithID() {
   const onCheckID = () => {
     axios.get("https://jsonplaceholder.typicode.com/posts/" + id)
       .then(res => {
-        console.log(res);
-        if (res.status === 200) {
-          setSelectedPost(res.data)
-        }
-      })
+                setSelectedPost(res.data)
+            })
       .catch(err => {
       console.log(err);
     })
@@ -38,12 +35,12 @@ export default function FetchwithID() {
       <div>FetchwithID <br></br>
         <input type="number" value={id} onChange={(e) => setId(e.target.value)} />
         <button onClick={onCheckID} >Please enter ID</button>
-        <button onClick={() => setSelectedPost('')} >Reset</button>
-        {selectedPost !== '' ? <div>
+        {/* <button onClick={() => setSelectedPost('')} >Reset</button> */}
+        {<div>
           <h1>Post Details</h1>
           <p>{selectedPost.title}</p>
           <p>{selectedPost.body}</p>
-        </div> : null}
+        </div>}
       </div>
     </>
   )
