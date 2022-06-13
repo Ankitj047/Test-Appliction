@@ -26,9 +26,11 @@ const getData = () => {
     
 {
     data.map((users)=>
-   ( 
-   <td>{users.name}</td>,
+   (
+<tr> 
+   <td>{users.name}</td>
 <td>{users.username}</td> 
+</tr>
 )   )
 }
 </table>
