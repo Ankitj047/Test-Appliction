@@ -42,7 +42,9 @@ export default function FetchDatainTable() {
           <th>username</th>
           <th>Email</th>
           <th>Adress</th>
+          <th>Geo lat Location</th>
         </tr>
+        {console.log(data)}
 
         {
           <tr key={data.id}>
@@ -50,7 +52,8 @@ export default function FetchDatainTable() {
             <td>{data.name}</td>
             <td>{data.username}</td>
             <td>{data.email}</td>
-            {/* <td>{data.address.street}</td> */}
+            <td>{data?.address?.street}</td>
+            <td>{data?.address?.geo?.lat}</td>
           </tr>
         }
         </tbody>
