@@ -19,6 +19,7 @@ import HooksLifeCycle from './Day_6_Lifecycle_Hooks/HooksLifeCycle';
 import Fetch from './Day_6_Lifecycle_Hooks/Practice/Fetch';
 import FetchwithID from './Day_6_Lifecycle_Hooks/Practice/FetchwithID';
 import FetchDatainTable from './Common/FetchDatainTable';
+import FetchCrud from './Common/Crud1/FetchCrud';
 
 
 function App() {
@@ -42,7 +43,8 @@ function App() {
       {/* <HooksLifeCycle /> */}
       {/* <Fetch/> */}
       {/* <FetchwithID/> */}
-<FetchDatainTable/>
+{/* <FetchDatainTable/> */}
+<FetchCrud/>
     </div>
   );
 }
