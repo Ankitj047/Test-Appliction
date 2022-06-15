@@ -20,7 +20,11 @@ const getdetails = () => {
     <div>FetchCrud</div>
 {
     data.map((data)=>   (
-    <tr>{data.id} {data.name} {data.address.street}</tr>
+      <tr>
+    <td>{data.id} </td>,
+    <td>{data.name}</td>,
+    <td> {data.address.street}</td>
+    </tr>
     ))
     }
     </>
