@@ -45,8 +45,8 @@ function App() {
       {/* <Fetch/> */}
       {/* <FetchwithID/> */}
 {/* <FetchDatainTable/> */}
-{/* <FetchCrud/> */}
-<OriNavbar/>
+<FetchCrud/>
+{/* <OriNavbar/> */}
 </div>
   );
 }

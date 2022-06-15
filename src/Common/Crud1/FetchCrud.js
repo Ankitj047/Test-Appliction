@@ -21,9 +21,9 @@ const getdetails = () => {
 {
     data.map((data)=>   (
       <tr>
-    <td>{data.id} </td>,
-    <td>{data.name}</td>,
-    <td> {data.address.street}</td>
+    <td>{data.id} </td>
+    <td>{data.name}</td>
+    {/* <td> {data.address.street}</td> */}
     </tr>
     ))
     }
