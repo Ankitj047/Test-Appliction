@@ -15,15 +15,24 @@ const getdetails = () => {
     }).catch((error)=>error)
 }
 
-const myDelete = (element) =>{
-  let ID;
-  ID = element.id;
-  axios.delete(`http://localhost:3000/posts/${ID}`)
+  const myDelete = (element) => {
+  axios.delete(`http://localhost:3000/posts/${element}`)
   .then((resp)=>{
     getdetails()
   })
   .catch((error)=>error)
-}
+  }
+  
+  const myEdit = (id) => {
+    let _newValue = {
+      name: "Mustafa"
+    }
+    axios.put(`http://localhost:3000/posts/${id}`, _newValue)
+      .then((resp) => {
+        getdetails()
+      })
+      .catch((error) => error)
+  }
 
   return (
   <>
@@ -36,10 +45,12 @@ const myDelete = (element) =>{
 {
     data.map((data,index)=>   (
       <tr>
-    <td>{data.id} </td>
+        <td>{index+1} </td>
     <td>{data.name}</td>
     <td> <button className="btn-danger"
-                onClick={() => myDelete(index)}>Delete</button></td>
+          onClick={() => myDelete(data.id)}>Delete</button></td>
+        <td> <button className="btn-danger"
+          onClick={() => myEdit(data.id)}>Edit</button></td>
     </tr>
     ))
     }
