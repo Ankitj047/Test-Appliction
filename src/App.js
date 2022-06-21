@@ -21,6 +21,15 @@ import FetchwithID from './Day_6_Lifecycle_Hooks/Practice/FetchwithID';
 import FetchDatainTable from './Common/FetchDatainTable';
 import FetchCrud from './Common/Crud1/FetchCrud';
 import OriNavbar from './Common/Project1/Navbar/OriNavbar';
+import PostData from './fetch_axios/PostData';
+import GetData from './fetch_axios/GetData';
+import Home from './fetch_axios/Home';
+import DeleteData from './fetch_axios/DeleteData';
+import PutData from './fetch_axios/PutData';
+import PostCrud from './Common/Crud1/PostCrud';
+import DeleteCrud from './Common/Crud1/DeleteCrud';
+import Interview1 from './Common/Interview1';
+
 
 
 function App() {
@@ -45,8 +54,16 @@ function App() {
       {/* <Fetch/> */}
       {/* <FetchwithID/> */}
 {/* <FetchDatainTable/> */}
-<FetchCrud/>
+{/* <FetchCrud/> */}
+{/* <PostCrud/> */}
+<DeleteCrud/>
 {/* <OriNavbar/> */}
+{/* <PostData/>
+<GetData/>
+<Home/>
+<DeleteData/>
+<PutData/> */}
+{/* <Interview1/> */}
 </div>
   );
 }
