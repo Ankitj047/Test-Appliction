@@ -58,8 +58,8 @@ function App() {
 {/* <FetchCrud/> */}
 {/* <PostCrud/> */}
 {/* <DeleteCrud/> */}
-<PutCrud/>
-{/* <OriNavbar/> */}
+{/* <PutCrud/> */}
+<OriNavbar/>
 {/* <PostData/>
 <GetData/>
 <Home/>
