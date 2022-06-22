@@ -27,8 +27,9 @@ import Home from './fetch_axios/Home';
 import DeleteData from './fetch_axios/DeleteData';
 import PutData from './fetch_axios/PutData';
 import PostCrud from './Common/Crud1/PostCrud';
-import DeleteCrud from './Common/Crud1/DeleteCrud';
+import DeleteCrud from './Common/Crud1/PutCrud';
 import Interview1 from './Common/Interview1';
+import PutCrud from './Common/Crud1/PutCrud';
 
 
 
@@ -56,7 +57,8 @@ function App() {
 {/* <FetchDatainTable/> */}
 {/* <FetchCrud/> */}
 {/* <PostCrud/> */}
-<DeleteCrud/>
+{/* <DeleteCrud/> */}
+<PutCrud/>
 {/* <OriNavbar/> */}
 {/* <PostData/>
 <GetData/>
