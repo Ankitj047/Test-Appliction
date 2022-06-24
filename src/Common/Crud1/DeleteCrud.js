@@ -15,10 +15,8 @@ const getdetails = () => {
     }).catch((error)=>error)
 }
 
-const myDelete = (element) =>{
-  let ID;
-  ID = element.id;
-  axios.delete(`http://localhost:3000/posts/${ID}`)
+const myDelete = (id) =>{
+  axios.delete(`http://localhost:3000/posts/${id}`)
   .then((resp)=>{
     getdetails()
   })
@@ -39,7 +37,7 @@ const myDelete = (element) =>{
     <td>{data.id} </td>
     <td>{data.name}</td>
     <td> <button className="btn-danger"
-                onClick={() => myDelete(index)}>Delete</button></td>
+                onClick={() => myDelete(data.id)}>Delete</button></td>
     </tr>
     ))
     }

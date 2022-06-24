@@ -9,10 +9,11 @@ useEffect (()=>{
     getdetails()
 },[])
 
+
 const getdetails = () => {
     axios.get("http://localhost:3000/posts").then((resp)=>{
         setData(resp.data)
-        console.log(resp.data)
+        // console.log(resp.data)
     }).catch((error)=>error)
 }
 

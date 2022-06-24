@@ -27,9 +27,11 @@ import Home from './fetch_axios/Home';
 import DeleteData from './fetch_axios/DeleteData';
 import PutData from './fetch_axios/PutData';
 import PostCrud from './Common/Crud1/PostCrud';
-import DeleteCrud from './Common/Crud1/PutCrud';
+import DeleteCrud from './Common/Crud1/DeleteCrud';
 import Interview1 from './Common/Interview1';
 import PutCrud from './Common/Crud1/PutCrud';
+import PutCrudWithModal from './Common/Crud1/PutCrudWithModal';
+import PutCrudDynamic from './Common/Crud1/PutCrudDynamic';
 
 
 
@@ -57,15 +59,18 @@ function App() {
 {/* <FetchDatainTable/> */}
 {/* <FetchCrud/> */}
 {/* <PostCrud/> */}
-{/* <DeleteCrud/> */}
+{/* <PutCrudWithModal/> */}
+<DeleteCrud/>
 {/* <PutCrud/> */}
-<OriNavbar/>
-{/* <PostData/>
-<GetData/>
+{/* <PutCrudDynamic/> */}
+{/* <OriNavbar/> */}
+ {/* <PostData/> */}
+{/* <GetData/>
 <Home/>
-<DeleteData/>
-<PutData/> */}
+<DeleteData/> */}
+{/* <PutData/>  */}
 {/* <Interview1/> */}
+
 </div>
   );
 }

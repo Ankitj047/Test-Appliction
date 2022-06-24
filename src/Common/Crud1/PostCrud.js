@@ -32,7 +32,7 @@ const Postdata = () =>{
   return (
   <>
     <div>PostCrud</div>
-    <input type="text" value={name} onChange={(e)=>setName(e.target.value)} /> Enter Name
+    <input type="text" value={name} onChange={(e)=>setName (e.target.value)} /> Enter Name
     <button onClick={()=>Postdata()} >Post data</button>
 
     <tr>

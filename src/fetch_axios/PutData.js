@@ -14,7 +14,7 @@ function UpdateData() {
   }, [])
 
   function getUsers() {
-    axios.get(`http://localhost:3001/posts`)
+    axios.get(`http://localhost:3000/posts`)
       .then(response => {
         console.log(response.data)
         setInfo(response.data)
@@ -56,7 +56,7 @@ function UpdateData() {
         ID = element.id;
       }
     })
-    axios.put(`http://localhost:3001/posts/${ID}`, data)
+    axios.put(`http://localhost:3000/posts/${ID}`, data)
       .then(response => {
         console.log("data posted into json file", response.data);
       })

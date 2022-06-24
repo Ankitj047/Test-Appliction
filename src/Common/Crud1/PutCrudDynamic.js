@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-export default function PutCrud() {
+export default function PutCrudDynamic() {
   const [data, setData] = useState([]);
+  const [name,setName] = useState()
 
   useEffect(() => {
     getdetails();
@@ -17,9 +18,21 @@ export default function PutCrud() {
       .catch((error) => error);
   };
 
+  // const myEdit = (id) => {
+  //   let _newValue = {
+  //     name: "Mustafa",
+  //   };
+  //   axios
+  //     .put(`http://localhost:3000/posts/${id}`, _newValue)
+  //     .then((resp) => {
+  //       getdetails();
+  //     })
+  //     .catch((error) => error);
+  // };
+
   const myEdit = (id) => {
     let _newValue = {
-      name: "Mustafa",
+      name,
     };
     axios
       .put(`http://localhost:3000/posts/${id}`, _newValue)
@@ -31,7 +44,9 @@ export default function PutCrud() {
 
   return (
     <>
-      <div>PutCrud  123</div>
+      <div>PutCrudDynamic</div>
+      <input type="text" value={name}  onChange={(e)=>setName(e.target.value)} /> PuData
+      <button onClick={()=>myEdit()} >Edit Data</button>
       <tr>
         <th>Id</th>
         <th>Name</th>
