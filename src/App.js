@@ -13,12 +13,12 @@ import PracticeConditionrendering from './Day_2_State/PracticeConditionrendering
 import BindingExample from './Day_3/BindingExample';
 import ListExample from './Day_3/ListExample';
 import ParentComponent from './Day_4_MethodAsProp/ParentComponent';
-import DataFetch from './Common/DataFetch';
+import DataFetch from './Common/Crud1/DataFetch';
 import Lifecycle from './Day_5_LifecycleMethods/Lifecycle';
 import HooksLifeCycle from './Day_6_Lifecycle_Hooks/HooksLifeCycle';
 import Fetch from './Day_6_Lifecycle_Hooks/Practice/Fetch';
 import FetchwithID from './Day_6_Lifecycle_Hooks/Practice/FetchwithID';
-import FetchDatainTable from './Common/FetchDatainTable';
+import FetchDatainTable from './Common/Crud1/FetchDatainTable';
 import FetchCrud from './Common/Crud1/FetchCrud';
 import OriNavbar from './Common/Project1/Navbar/OriNavbar';
 import PostData from './fetch_axios/PostData';
@@ -28,7 +28,7 @@ import DeleteData from './fetch_axios/DeleteData';
 import PutData from './fetch_axios/PutData';
 import PostCrud from './Common/Crud1/PostCrud';
 import DeleteCrud from './Common/Crud1/DeleteCrud';
-import Interview1 from './Common/Interview1';
+import Interview1 from './Common/Interview/Interview1';
 import PutCrud from './Common/Crud1/PutCrud';
 import PutCrudWithModal from './Common/Crud1/PutCrudWithModal';
 import PutCrudDynamic from './Common/Crud1/PutCrudDynamic';
@@ -60,7 +60,7 @@ function App() {
 {/* <FetchCrud/> */}
 {/* <PostCrud/> */}
 {/* <PutCrudWithModal/> */}
-<DeleteCrud/>
+{/* <DeleteCrud/> */}
 {/* <PutCrud/> */}
 {/* <PutCrudDynamic/> */}
 {/* <OriNavbar/> */}
