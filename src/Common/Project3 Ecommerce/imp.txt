@@ -1,1 +1,10 @@
+help taken by 
+https://www.youtube.com/watch?v=YddPHj0AYJM
+https://www.youtube.com/watch?v=YddPHj0AYJM
+https://www.youtube.com/watch?v=2muGKFCVSc0
+
+
+video 6 half done
+
+
 for scroll bar we can use  overflow-y: scroll also we can use react scroll bar (use npm install)

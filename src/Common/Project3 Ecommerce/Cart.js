@@ -1,13 +1,43 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
+import { useReducer } from "react";
 import "./Cart.css";
 import { Products } from "./Product";
+import { reducer } from "./Reducer";
+
+ export const CartContext = createContext();
 
 export default function Cart() {
 
-const[items, setitems] = useState([])
+  const initialState = {
+    items: Products,
+    totalAmount: 0,
+    totalItems:0
+  }
+const {items} = initialState
+
+const [state, dispatch] =useReducer(reducer, initialState)
+
+//remove individual cart
+
+const removeItem = (id)=>{
+return dispatch ({
+  type: "REMOVE_ITEM",
+  payload: id
+})
+};
+
+//clear all data
+
+const clearCart =()=>{
+  return dispatch ({
+    type: "CLEAR_CART"
+  })
+}
 
   return (
     <>
+    <CartContext.Provider value={{Products,...state, removeItem, clearCart}} >
+      <div style={{marginTop:"40px", marginBottom:"40px"}} >
       <header>
         <div className="continue-shopping">
           <img src="../images/arrow.jpg" alt="arrow" className="arrow-icon" />
@@ -30,36 +60,36 @@ const[items, setitems] = useState([])
         </p>
         <div className="cart-items">
           <div className="cart-items-container">
-            
-{
-    Products.map((data)=>{
-        return(
-            <>
-            <div className="items-info">
-            <div className="product-img">
-            <img src={data.img}  alt="image"/>
-          </div>
-          <div className="title">
-            <h2>{data.title}</h2>
-            <p>{data.description}</p>
-          </div>
-          <div className="add-minus-quantity">
-            <i className="fas fa-minus minus"></i>
-            <input type="text" placeholder="quantity" disabled />
-            <i className="fas fa-plus add"></i>
-          </div>
-          <div className="price">
-            <h3>{data.price}</h3>
-          </div>
-          <div className="remove-item">
-            <i className="fas fa-trash-alt remove"></i>
-          </div>
-          </div>
-            </>
-        )
-    })
-}
-            {/* <hr style={{ backgroundColor: "black" }} /> */}
+            {items.map((data) => {
+              const { img, title, description, price, id } = data;
+
+              return (
+                <>
+                  <div className="items-info">
+                    <div className="product-img">
+                      <img src={img} alt="image" />
+                    </div>
+                    <div className="title">
+                      <h2>{title}</h2>
+                      <p>{description}</p>
+                    </div>
+                    <div className="add-minus-quantity">
+                      <i className="fas fa-minus minus"></i>
+                      <input type="text" placeholder="quantity" disabled />
+                      <i className="fas fa-plus add"></i>
+                    </div>
+                    <div className="price">
+                      <h3>{price}</h3>
+                    </div>
+                    <div className="remove-item">
+                      <i className="fas fa-trash-alt remove" onClick={()=>removeItem(id)} ></i>
+                    </div>
+                    
+                  </div>
+                  <hr style={{ backgroundColor: "black", marginTop:"10px", marginBottom:"10px" }} />
+                </>
+              );
+            })}
           </div>
         </div>
         <div className="card-total">
@@ -67,8 +97,11 @@ const[items, setitems] = useState([])
             Card Total: <span>2000rs</span>
           </h3>
           <button>CheckOut</button>
+          <button className="clear-cart" onClick={()=>clearCart()} >Cleat Cart</button>
         </div>
       </section>
-    </>
+      </div>
+      </CartContext.Provider>
+          </>
   );
 }
