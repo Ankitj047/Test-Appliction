@@ -32,12 +32,14 @@ import Interview1 from './Common/Interview/Interview1';
 import PutCrud from './Common/Crud1/PutCrud';
 import PutCrudWithModal from './Common/Crud1/PutCrudWithModal';
 import PutCrudDynamic from './Common/Crud1/PutCrudDynamic';
+import Restaurant from './Common/Project2/Restaurant';
+import Cart from './Common/Project3 Ecommerce/Cart';
 
 
 
 function App() {
   return (
-    <div className="App">
+    <>
       {/* <FirstComp  name = "ankit" /> */}
       {/* <Secondcomp subject="reactjs" Altclass="COMP" stream="IT" />   */}
       {/* <Firsctclasspropcom  name="ankit" /> */}
@@ -70,8 +72,9 @@ function App() {
 <DeleteData/> */}
 {/* <PutData/>  */}
 {/* <Interview1/> */}
-
-</div>
+{/* <Restaurant/> */}
+<Cart/>
+</>
   );
 }
 

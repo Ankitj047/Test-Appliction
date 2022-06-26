@@ -1,0 +1,1 @@
+for scroll bar we can use  overflow-y: scroll also we can use react scroll bar (use npm install)
